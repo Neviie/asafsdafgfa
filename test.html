@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Data</title>
+</head>
+<body>
+    <h1>API Data:</h1>
+    <div id="apiData"></div>
+
+    <script>
+        const apiUrl = 'http://api.puzzlebot.top/api?token=2s1OVLz5iHnPeU7dp8ZGAUrFww8cQ4p9&method=getVariableValue&variable=custom_variable_JHCW5J5N0KX6CBUG&user_id=487518336';
+
+        fetch (apiUrl), {
+           
+        }
+        .then(response => response.text())
+        .then(text => {
+            document.getElementById('apiData').innerText = text;
+        })
+        .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
